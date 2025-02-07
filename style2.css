@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0%;
+    background: #c6e6e8;
+}
+.header {
+    background-color: white;
+    text-align: center;
+}
+img {
+    object-fit: contain;
+    height: 200px;
+    width: 100%;
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(42, 147, 42);
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:"Times New Roman", Times, serif;
+}
+.topnav a:hover {
+    background-color: rgb(134, 228, 139);
+    color: black;
+}
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    } 
+}
+.row {
+    background-color:  #c6e6e8;
+}
+.column {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+.card {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+p, h1, h2, li, h3, td {
+    font-family:"Times New Roman", Times, serif;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle, iframe {
+            width: 100%;
+        }
+}
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c6e6e8;
+    padding: 10px;
+    min-width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 18cm;
+}
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+p.normal {
+    font-style: normal;
+}
+p.italic {
+    font-style: italic;
+}
+ol {
+    list-style: circle;
+}
+p.bold {
+    font-weight:bold;
+}
+td {
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 6px;
+}
+th {
+    padding: 6px;
+}
+#overflowTest {
+    overflow: auto;
+}
